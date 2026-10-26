@@ -1,6 +1,6 @@
 cask "monstermac" do
-  version "1.1.1"
-  sha256 "9ad5ea28b4c04159253e43af501d6380c5ca376b1da13b819a44ebd21382db5f"
+  version "1.2.0"
+  sha256 "f41b7fabeca9e9ff121d45f169540ec9f595824435380a00fb8ab75911ae4a69"
 
   url "https://github.com/quino0627/MonsterMac-releases/releases/download/v#{version}/MonsterMac-#{version}.dmg"
   name "MonsterMac"
