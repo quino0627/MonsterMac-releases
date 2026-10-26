@@ -1,6 +1,6 @@
 cask "monstermac" do
-  version "1.0.0"
-  sha256 "bd5438cc9c4f8bf548d9d001b4608bc1501f56709782af35a9ca3270d467ed56"
+  version "1.1.0"
+  sha256 "7d882375c9c7e4da27713783f0bc9681860b5491e105e21d8558e033bf9856b9"
 
   url "https://github.com/quino0627/MonsterMac-releases/releases/download/v#{version}/MonsterMac-#{version}.dmg"
   name "MonsterMac"
@@ -9,7 +9,12 @@ cask "monstermac" do
 
   depends_on macos: :ventura
   app "MonsterMac.app"
-  uninstall quit: "io.github.quino0627.MonsterMac"
+  uninstall quit: "io.github.quino0627.MonsterMac",
+            script: {
+              executable: "#{appdir}/MonsterMac.app/Contents/MacOS/MonsterMac",
+              args: ["--unregister-helper"],
+              sudo: false,
+            }
 
   zap trash: [
     "~/Library/Application Support/MonsterMac",
