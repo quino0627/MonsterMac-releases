@@ -1,10 +1,10 @@
 cask "monstermac" do
-  version "1.3.4"
-  sha256 "3e8fcf3ca714421899fd7d1aa023c8a36dd20d8e36cba405d202b7fc2289b3a5"
+  version "1.4.0"
+  sha256 "ea39ec6ff02647c2f9ec30ca4d2f7acebc3d25de9bebb61ca6a93a213f7df86b"
 
   url "https://github.com/quino0627/MonsterMac-releases/releases/download/v#{version}/MonsterMac-#{version}.dmg"
   name "MonsterMac"
-  desc "노치 왼쪽 버튼으로 Mac 화면과 시스템 잠자기를 제어"
+  desc "노치에서 화면 유지, AI 구독 사용량과 외장 모니터 제어"
   homepage "https://github.com/quino0627/MonsterMac-releases"
 
   depends_on macos: :ventura
